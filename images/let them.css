@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font: 1em sans-serif;
+}
+
+
+body{
+    color: rgb(22, 17, 22);
+
+}
+.content{
+    display: flex;
+    padding: 10px;
+
+}
+.content > div{
+    flex:1;
+    margin: auto;
+
+}

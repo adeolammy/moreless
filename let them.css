@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font: 1em sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    color: white;
+    background: rgba(22, 17, 22,0.8);
+
+
+
+}
+.wrapper{
+
+
+}
+
+.container-wrap{
+	background:rgb(25, 27, 24);
+	border: 2px solid rgb(25, 27, 24);
+	height: 90px;
+}
+
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+
+	
+}
+nav .container > ul{
+	display: flex;
+	margin: 40px auto;
+}
+
+nav .container ul > li > a{
+	flex: 1 1 50%;
+	color: darkorange;
+	padding: 0px 20px;
+	text-transform: uppercase;
+
+}
+
+nav .container ul > li > a:hover{
+	border-bottom: 2px solid purple;
+	color: white;
+
+}
+
+.container-wrap img{
+	border:none;
+	border-radius:20px;
+	cursor: pointer;
+	position: absolute;
+	top:1.5rem;
+	left: 2rem;
+	z-index: 13;
+	opacity: 0.5;
+
+}
+.container-wrap h4{
+	position: absolute;
+	top:45px;
+	left: 78px;
+	font-weight: bolder;
+	color: #ddd;
+	font-size: 20px;
+	z-index: 34;
+}
+.container-wrap span{
+	position: absolute;
+	top:-4px;
+	left: 86px;
+	font-weight: bolder;
+	color: darkorange;
+}
+
+button{
+	border: none;
+	border-radius: 50px;
+	color: white;
+	background-color: darkblue;
+	padding: 10px 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 100px;
+	top:30px;
+	flex-wrap: wrap;
+	flex: 1;
+}
+button:hover{
+	background-color: blue;
+	cursor: pointer;
+	color: orange;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#menutoggle{
+	display: none;
+}
+.na-watin{
+	display:flex;	
+	justify-content: flex-end;	
+
+}
+
+.na-watin label:hover{
+	opacity: 0.9;
+	background-color: darkorange;
+
+}
+.waits{
+	position: absolute;	
+	background-color: 	#343422;
+	padding: 10px 20px;
+	cursor: pointer;
+
+
+}
+#right-sidebar-cont ul{
+display: flex;	
+flex-direction:column;	
+
+
+}
+#right-sidebar-cont li{
+	border-bottom: 	2px solid white;
+	line-height: 	20px;
+	padding: 20px 0px;
+	text-align: center;
+
+
+}
+
+
+#right-sidebar{
+	width:250px;
+	height:auto;
+	background-color:olive;
+	position: absolute;
+	opacity: 0.8;
+	/*left: -250px;  */
+	transition: all 0.4s ease-in-out;
+
+
+}
+
+#right-sidebar li:hover{
+	background-color: darkorange;
+	color: white;
+	cursor: pointer;
+}
+
+
+/*need work on this for it to toggle while click on it*/
+/*need work on this for it to toggle while click on it*/
+#menutoggle:checked ~.right-sidebar{
+	position: absolute;
+	left: 0px;
+
+}
